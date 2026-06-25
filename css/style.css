@@ -78,7 +78,7 @@
 }
 
 .navbar .navbar-brand img {
-    max-height: 50px;
+    max-height: 70px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -239,33 +239,46 @@
     opacity: 1;
 }
 
+.header-carousel .owl-carousel-item img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
 .header-carousel .owl-nav {
     position: absolute;
-    width: 200px;
-    height: 40px;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    height: 45px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+    pointer-events: none;
 }
 
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
-    background: transparent;
-    border: 1px solid #FFFFFF;
-    font-size: 22px;
-    transition: .5s;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    font-size: 20px;
+    transition: .3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    pointer-events: auto;
 }
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
+    color: #FFFFFF;
     background: var(--primary);
     border-color: var(--primary);
 }
@@ -279,33 +292,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
 .header-carousel .owl-dot {
-    position: relative;
     display: inline-block;
     margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    background: transparent;
-    border: 1px solid #FFFFFF;
-    transition: .5s;
-}
-
-.header-carousel .owl-dot::after {
-    position: absolute;
-    content: "";
-    width: 5px;
-    height: 5px;
-    top: 4px;
-    left: 4px;
-    background: #FFFFFF;
-    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: .3s;
 }
 
 .header-carousel .owl-dot.active {
+    width: 24px;
     background: var(--primary);
-    border-color: var(--primary);
+    border-radius: 5px;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -577,4 +580,210 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+
+/********** Portfolio & Custom Animations **********/
+
+/* Interactive Circuit Canvas */
+.circuit-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    background: radial-gradient(circle at center, #1e2429 0%, #111417 100%);
+    border-radius: 15px;
+    border: 2px solid rgba(46, 184, 114, 0.25);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+#circuit-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* PCB Flow Section Styling */
+.pcb-container {
+    background: #1e2429;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.pcb-svg-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.pcb-svg-lines path.trace-line {
+    stroke: rgba(46, 184, 114, 0.12);
+    stroke-width: 2;
+    fill: none;
+}
+
+.pcb-svg-lines path.pulse-line {
+    stroke: var(--primary);
+    stroke-width: 2;
+    stroke-dasharray: 6, 15;
+    fill: none;
+    animation: pcb-pulse-flow 1.2s linear infinite;
+}
+
+@keyframes pcb-pulse-flow {
+    to {
+        stroke-dashoffset: -42;
+    }
+}
+
+.pcb-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.pcb-block {
+    background: rgba(40, 47, 52, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+}
+
+.pcb-block:hover, .pcb-block.active {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(46, 184, 114, 0.3);
+    transform: translateY(-5px);
+    background: rgba(46, 184, 114, 0.06);
+}
+
+.pcb-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+    font-size: 1.5rem;
+    color: var(--primary);
+    transition: 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pcb-block:hover .pcb-icon-wrapper, .pcb-block.active .pcb-icon-wrapper {
+    background: var(--primary);
+    color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(46, 184, 114, 0.4);
+}
+
+.pcb-info-display {
+    margin-top: 2.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 4px solid var(--primary);
+    border-radius: 0 12px 12px 0;
+    min-height: 120px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Timeline component */
+.timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(46, 184, 114, 0.2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -38px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 3px rgba(46, 184, 114, 0.2);
+    z-index: 1;
+}
+
+/* Skill badges */
+.skill-badge {
+    background: var(--light);
+    color: var(--dark);
+    font-weight: 500;
+    padding: 0.4rem 0.9rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0.3rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.skill-badge:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46,184,114,0.15);
+}
+
+.skill-category-title {
+    color: var(--primary);
+    font-weight: 700;
+    border-bottom: 2px solid rgba(46, 184, 114, 0.08);
+    padding-bottom: 0.4rem;
+}
+
+/* Project Cards */
+.project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.4s;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.project-card .btn-outline-primary:hover {
+    color: #fff;
 }

@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>About Me - Akarsh S M</title>
+  <title>Universal Smart HVAC Controller - Akarsh S M</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="Embedded Linux, RTOS, PCB Design, IoT Gateway, STM32, ESP32, Yocto Project, KiCad" name="keywords" />
-  <meta content="Learn more about Akarsh S M, his background, education, and technical expertise in Embedded & IoT Systems." name="description" />
+  <meta content="HVAC Controller, Modbus RTU, Relays, ESP32 Firmware, Energy Optimization" name="keywords" />
+  <meta content="Details of the Universal Smart HVAC Control Unit developed by Akarsh S M at Racanaa Energy." name="description" />
 
   <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon" />
@@ -52,13 +52,13 @@
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
       <div class="navbar-nav ms-auto">
         <a href="index.html" class="nav-item nav-link">Home</a>
-        <a href="about.html" class="nav-item nav-link active">About</a>
+        <a href="about.html" class="nav-item nav-link">About</a>
         <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+          <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Projects</a>
           <div class="dropdown-menu rounded-0 rounded-bottom m-0">
             <a href="portable-renewable-microgrid.html" class="dropdown-item">Renewable Microgrid</a>
             <a href="smart-energy-meter.html" class="dropdown-item">Smart Energy Meter</a>
-            <a href="smart-hvac-control.html" class="dropdown-item">Smart HVAC Control</a>
+            <a href="smart-hvac-control.html" class="dropdown-item active">Smart HVAC Control</a>
             <a href="ev-charging-station.html" class="dropdown-item">EV Charging Station</a>
             <a href="iot-gateway.html" class="dropdown-item">Embedded IoT Gateway</a>
           </div>
@@ -73,77 +73,74 @@
   <!-- Page Header Start -->
   <div class="container-fluid header-bg py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
-      <h1 class="display-4 text-white mb-3 animated slideInDown">About Me</h1>
+      <h1 class="display-4 text-white mb-3 animated slideInDown">Smart HVAC Control</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
-          <li class="breadcrumb-item text-primary active" aria-current="page">About Me</li>
+          <li class="breadcrumb-item"><a class="text-white" href="#">Projects</a></li>
+          <li class="breadcrumb-item text-primary active" aria-current="page">Smart HVAC Control</li>
         </ol>
       </nav>
     </div>
   </div>
   <!-- Page Header End -->
 
-  <!-- About Start -->
+  <!-- Project Details Start -->
   <div class="container-xxl py-5">
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <p class="text-primary mb-2"><span class="me-2">#</span>My Background</p>
-          <h1 class="display-6 mb-4">Designing Hardware & Writing Firmware</h1>
+          <p class="text-primary mb-2"><span class="me-2">#</span>Project Overview</p>
+          <h1 class="display-6 mb-4">Universal Smart HVAC Control Unit</h1>
           <p class="mb-4">
-            Hi, I'm Akarsh S M. I am a passionate Embedded Developer based in Karnataka, India. Over the last 3 years, I have worked across hardware layout design, RTOS firmware implementation, and complete product prototyping lifecycle processes.
+            Designed and developed a modular, universal HVAC control unit engineered to connect and interface with multi-vendor heating and cooling architectures. The controller collects local air quality, relative humidity, and temperatures, executing local optimization algorithms to adjust thermal outputs and control power consumption dynamically.
           </p>
           <p class="mb-4">
-            My primary motivation is building energy-efficient and highly reliable industrial telemetry units. I am particularly experienced with platforms such as NXP i.MX6ULL, BeagleBone Black, STMicroelectronics STM32, and Nordic nRF52/ESP32 SoC controllers.
+            Equipped with optocoupled solid-state relays, the module shields core processing ICs from inductive voltage surges during compressor switching events, maintaining system uptime and reliability.
           </p>
-          <p class="mb-4">
-            <strong>Education:</strong> I hold a Bachelor of Engineering in Electrical and Electronics Engineering from the prestigious <strong>National Institute of Engineering (NIE), Mysore</strong> (Graduated in 2023).
-          </p>
+
+          <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Optocoupled relay barriers for safe power switching</h5>
+          <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>RS485 Modbus RTU interface for HVAC system integration</h5>
+          <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Thread / Matter mesh network protocol integration</h5>
+          <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Drives local HVAC site optimization, reducing load by 20%</h5>
         </div>
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="img-border">
-            <img class="img-fluid rounded" src="img/profile.png" alt="Akarsh S M" />
+          <div class="p-4 bg-light rounded">
+            <h4 class="mb-4">Technical Details</h4>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td><strong>Project Domain</strong></td>
+                  <td>Smart Buildings & Climate Optimization</td>
+                </tr>
+                <tr>
+                  <td><strong>Controllers</strong></td>
+                  <td>Nordic Semiconductor nRF52, Espressif ESP32, STM32</td>
+                </tr>
+                <tr>
+                  <td><strong>Buses & Protocols</strong></td>
+                  <td>Modbus RTU over RS485, Matter, Thread, BLE</td>
+                </tr>
+                <tr>
+                  <td><strong>PCB Design</strong></td>
+                  <td>2-Layer controller board designed in KiCad</td>
+                </tr>
+                <tr>
+                  <td><strong>Safety Isolation</strong></td>
+                  <td>Optoisolators (4N35) protecting MCU GPIO pins</td>
+                </tr>
+                <tr>
+                  <td><strong>Firmware Stack</strong></td>
+                  <td>C / C++, Espressif IDE, RTOS task management</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- About End -->
-
-  <!-- Laboratory Instrumentation & Debugging Tools Start -->
-  <div class="container-xxl py-5 bg-light rounded my-5">
-    <div class="container">
-      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-        <p class="text-primary mb-2"><span class="me-2">#</span>Instrumentation</p>
-        <h1 class="display-6 mb-0">Lab Equipment & Debugging Skills</h1>
-      </div>
-      <div class="row g-4 text-center">
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="bg-white p-4 rounded shadow-sm h-100">
-            <i class="fa fa-wave-square fa-3x text-primary mb-3"></i>
-            <h5>Signal Debugging</h5>
-            <p class="text-muted small">Proficient with Oscilloscopes, Digital Logic Analyzers, and Multimeters to capture bus lines (I2C, SPI, UART) and analyze noise issues.</p>
-          </div>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="bg-white p-4 rounded shadow-sm h-100">
-            <i class="fa fa-terminal fa-3x text-primary mb-3"></i>
-            <h5>Protocol Analysis</h5>
-            <p class="text-muted small">Decoding communication payloads, parsing Modbus RTU telemetry packets, analyzing MQTT topics, and checking Thread/Matter mesh connections.</p>
-          </div>
-        </div>
-        <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
-          <div class="bg-white p-4 rounded shadow-sm h-100">
-            <i class="fa fa-bug fa-3x text-primary mb-3"></i>
-            <h5>In-Circuit Debugging</h5>
-            <p class="text-muted small">Expertise in STM32 J-Link/ST-Link hardware debugging, GDB execution, RTOS task-switching tracing, and bootloader customization.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Laboratory Instrumentation & Debugging Tools End -->
+  <!-- Project Details End -->
 
   <!-- Footer Start -->
   <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">

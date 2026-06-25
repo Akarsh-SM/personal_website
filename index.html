@@ -1,881 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Zoofari - Zoo & Safari Park Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+<head>
+  <meta charset="utf-8" />
+  <title>Akarsh S M - Embedded & IoT Systems Engineer</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Embedded Linux, RTOS, PCB Design, IoT Gateway, STM32, ESP32, Yocto Project, KiCad" name="keywords" />
+  <meta content="Portfolio of Akarsh S M, Embedded Systems & IoT Engineer with 3+ years of experience in hardware, firmware, and low-level driver development." name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Spinner Start -->
-    <div
-      id="spinner"
-      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-    >
-      <div
-        class="spinner-border text-primary"
-        style="width: 3rem; height: 3rem"
-        role="status"
-      >
-        <span class="sr-only">Loading...</span>
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand p-0">
+      <i class="fa fa-microchip text-primary me-2 fs-3"></i>
+      <h1 class="m-0 text-primary" style="font-size: 1.6rem; letter-spacing: 0.5px;">Akarsh S M</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+      <div class="navbar-nav ms-auto">
+        <a href="index.html" class="nav-item nav-link active">Home</a>
+        <a href="about.html" class="nav-item nav-link">About</a>
+        <div class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Projects</a>
+          <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+            <a href="portable-renewable-microgrid.html" class="dropdown-item">Renewable Microgrid</a>
+            <a href="smart-energy-meter.html" class="dropdown-item">Smart Energy Meter</a>
+            <a href="smart-hvac-control.html" class="dropdown-item">Smart HVAC Control</a>
+            <a href="ev-charging-station.html" class="dropdown-item">EV Charging Station</a>
+            <a href="iot-gateway.html" class="dropdown-item">Embedded IoT Gateway</a>
+          </div>
+        </div>
+        <a href="Resume_26_ats_embeded (1).pdf" class="nav-item nav-link" target="_blank">Resume</a>
+        <a href="contact.html" class="nav-item nav-link">Contact</a>
       </div>
     </div>
-    <!-- Spinner End -->
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
-      <div class="row gx-0 d-none d-lg-flex">
-        <div class="col-lg-7 px-5 text-start">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>123 Street, New York, USA</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center py-3">
-            <small class="far fa-clock text-primary me-2"></small>
-            <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
-          </div>
-        </div>
-        <div class="col-lg-5 px-5 text-end">
-          <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-            <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+012 345 6789</small>
-          </div>
-          <div class="h-100 d-inline-flex align-items-center">
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-0" href=""
-              ><i class="fab fa-instagram"></i
-            ></a>
+  <!-- Hero Header Start -->
+  <div class="container-fluid bg-dark p-0 mb-5 text-light">
+    <div class="row g-0 flex-column-reverse flex-lg-row align-items-center">
+      <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="h-100 d-flex flex-column justify-content-center p-3">
+          <h6 class="text-primary text-uppercase mb-2" style="letter-spacing: 2px;">Embedded Systems & IoT</h6>
+          <h1 class="display-4 text-light mb-4">
+            Akarsh S M
+          </h1>
+          <p class="fs-5 mb-4 text-light-50">
+            Building reliable, hardware-software co-designed solutions. Specializing in Embedded Linux, RTOS firmware development, and high-speed multilayer PCB design.
+          </p>
+          <div class="d-flex flex-wrap pt-2 animated slideInDown">
+            <a href="contact.html" class="btn btn-primary py-3 px-5 me-3 mb-3">Get in Touch</a>
+            <a href="Resume_26_ats_embeded (1).pdf" target="_blank" class="btn btn-outline-light py-3 px-5 mb-3">View Resume</a>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Topbar End -->
-
-    <!-- Navbar Start -->
-    <nav
-      class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <a href="index.html" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon" />
-        <h1 class="m-0 text-primary">Zoofari</h1>
-      </a>
-      <button
-        type="button"
-        class="navbar-toggler"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarCollapse"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
-        <div class="navbar-nav ms-auto">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link">Services</a>
-          <div class="nav-item dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Pages</a
-            >
-            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="animal.html" class="dropdown-item">Our Animals</a>
-              <a href="membership.html" class="dropdown-item">Membership</a>
-              <a href="visiting.html" class="dropdown-item">Visiting Hours</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
-            </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <a href="" class="btn btn-primary"
-          >Buy Ticket<i class="fa fa-arrow-right ms-3"></i
-        ></a>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-dark p-0 mb-5">
-      <div class="row g-0 flex-column-reverse flex-lg-row">
-        <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
-          <div
-            class="header-bg h-100 d-flex flex-column justify-content-center p-5"
-          >
-            <h1 class="display-4 text-light mb-5">
-              Enjoy Wonderful Day With Your Family
-            </h1>
-            <div class="d-flex align-items-center pt-4 animated slideInDown">
-              <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5"
-                >Read More</a
-              >
-              <button
-                type="button"
-                class="btn-play"
-                data-bs-toggle="modal"
-                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
-                data-bs-target="#videoModal"
-              >
-                <span></span>
-              </button>
-              <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-          <div class="owl-carousel header-carousel">
-            <div class="owl-carousel-item">
-              <img class="img-fluid" src="img/carousel-1.jpg" alt="" />
-            </div>
-            <div class="owl-carousel-item">
-              <img class="img-fluid" src="img/carousel-2.jpg" alt="" />
-            </div>
-            <div class="owl-carousel-item">
-              <img class="img-fluid" src="img/carousel-3.jpg" alt="" />
-            </div>
-          </div>
+      <div class="col-lg-6 p-4 wow fadeIn" data-wow-delay="0.3s">
+        <div class="circuit-container">
+          <canvas id="circuit-canvas"></canvas>
         </div>
       </div>
     </div>
-    <!-- Header End -->
+  </div>
+  <!-- Hero Header End -->
 
-    <!-- Video Modal Start -->
-    <div
-      class="modal modal-video fade"
-      id="videoModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content rounded-0">
-          <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+  <!-- About Section Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="img-border">
+            <img class="img-fluid rounded" src="img/profile.png" alt="Akarsh S M" />
           </div>
-          <div class="modal-body">
-            <!-- 16:9 aspect ratio -->
-            <div class="ratio ratio-16x9">
-              <iframe
-                class="embed-responsive-item"
-                src=""
-                id="video"
-                allowfullscreen
-                allowscriptaccess="always"
-                allow="autoplay"
-              ></iframe>
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <p class="text-primary mb-2"><span class="me-2">#</span>About Me</p>
+          <h1 class="display-6 mb-4">Embedded Engineer & Hardware Designer</h1>
+          <p class="mb-4">
+            I am an Embedded Systems Engineer with 3+ years of experience across all stages of product design. I bridge the gap between complex hardware configurations and high-efficiency firmware architectures.
+          </p>
+          <p class="mb-4">
+            My experience spans RTOS device driver development, customized Embedded Linux Yocto builds, and multi-layer high-frequency PCB board designs. I focus on optimizing telemetry data integrity and local edge-computation to reduce cloud dependence.
+          </p>
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <h5><i class="far fa-check-circle text-primary me-3"></i>3+ Years Experience</h5>
+            </div>
+            <div class="col-sm-6">
+              <h5><i class="far fa-check-circle text-primary me-3"></i>RTOS & Linux Kernels</h5>
+            </div>
+            <div class="col-sm-6">
+              <h5><i class="far fa-check-circle text-primary me-3"></i>Multilayer PCB Design</h5>
+            </div>
+            <div class="col-sm-6">
+              <h5><i class="far fa-check-circle text-primary me-3"></i>Telemetry Protocols</h5>
             </div>
           </div>
+          <a class="btn btn-primary py-3 px-5" href="about.html">Read More About Me</a>
         </div>
       </div>
     </div>
-    <!-- Video Modal End -->
+  </div>
+  <!-- About Section End -->
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p>
-            <h1 class="display-5 mb-4">
-              Why You Should Visit
-              <span class="text-primary">Zoofari</span> Park!
-            </h1>
-            <p class="mb-4">
-              Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
-              stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo
-              nonumy clita sit at, sed sit sanctus dolor eos.
-            </p>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Free Car
-              Parking
-            </h5>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Natural
-              Environment
-            </h5>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Professional
-              Guide & Security
-            </h5>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>World Best
-              Animals
-            </h5>
-            <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+  <!-- PCB Systems Architecture Start -->
+  <div class="container-xxl py-5 bg-light rounded my-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        <p class="text-primary mb-2"><span class="me-2">#</span>Interactive PCB Flow</p>
+        <h1 class="display-6 mb-0">Hardware-Firmware Integration Flow</h1>
+      </div>
+      <div class="pcb-container text-light wow fadeInUp" data-wow-delay="0.2s">
+        <!-- SVG Connecting Traces -->
+        <svg class="pcb-svg-lines d-none d-lg-block" viewBox="0 0 1000 240" preserveAspectRatio="none">
+          <!-- Sensor to MCU -->
+          <path class="trace-line" d="M 125 120 L 375 120" />
+          <path class="pulse-line" d="M 125 120 L 375 120" />
+          
+          <!-- MCU to Memory (S-Curve) -->
+          <path class="trace-line" d="M 375 120 L 440 120 L 480 180 L 625 180" />
+          <path class="pulse-line" d="M 375 120 L 440 120 L 480 180 L 625 180" />
+          
+          <!-- MCU to Wireless (45 degree Routing) -->
+          <path class="trace-line" d="M 375 100 L 430 45 L 780 45 L 875 120" />
+          <path class="pulse-line" d="M 375 100 L 430 45 L 780 45 L 875 120" />
+        </svg>
+
+        <div class="pcb-grid">
+          <div class="pcb-block active" id="pcb-sensors">
+            <div class="pcb-icon-wrapper"><i class="fa fa-microchip"></i></div>
+            <h4>1. Sensors & ADCs</h4>
+            <p class="small text-muted mb-0">SPI/I2C Analog Inputs</p>
           </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="img-border">
-              <img class="img-fluid" src="img/about.jpg" alt="" />
-            </div>
+          <div class="pcb-block" id="pcb-mcu">
+            <div class="pcb-icon-wrapper"><i class="fa fa-cogs"></i></div>
+            <h4>2. STM32 / ESP32 MCU</h4>
+            <p class="small text-muted mb-0">RTOS Core Processing</p>
+          </div>
+          <div class="pcb-block" id="pcb-memory">
+            <div class="pcb-icon-wrapper"><i class="fa fa-database"></i></div>
+            <h4>3. Storage Flash</h4>
+            <p class="small text-muted mb-0">Wear-leveling logs</p>
+          </div>
+          <div class="pcb-block" id="pcb-wireless">
+            <div class="pcb-icon-wrapper"><i class="fa fa-wifi"></i></div>
+            <h4>4. Connectivity</h4>
+            <p class="small text-muted mb-0">MQTT / BLE Gateway</p>
+          </div>
+        </div>
+
+        <div class="pcb-info-display">
+          <h4 id="pcb-info-title" class="text-primary">Analog & Digital Sensor Interface</h4>
+          <p id="pcb-info-text" class="mb-0 text-white-50">
+            I specialize in interfacing with high-accuracy industrial sensors. This involves configuring analog-to-digital converters (ADC) and low-noise operational amplifiers, along with robust serial buses (I2C, SPI) to pull real-time telemetry like voltage, current, power factor, and ambient temperatures.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PCB Systems Architecture End -->
+
+  <!-- Skills Section Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        <p class="text-primary mb-2"><span class="me-2">#</span>Skills Matrix</p>
+        <h1 class="display-6 mb-0">Technical Core Competencies</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="p-4 bg-light rounded h-100">
+            <h5 class="skill-category-title mb-3"><i class="fa fa-code text-primary me-2"></i>Embedded & IoT</h5>
+            <span class="skill-badge">Embedded C</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Embedded Linux</span>
+            <span class="skill-badge">RTOS</span>
+            <span class="skill-badge">Yocto Project</span>
+            <span class="skill-badge">OTA Systems</span>
+            <span class="skill-badge">Device Drivers</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="p-4 bg-light rounded h-100">
+            <h5 class="skill-category-title mb-3"><i class="fa fa-network-wired text-primary me-2"></i>Protocols</h5>
+            <span class="skill-badge">UART</span>
+            <span class="skill-badge">SPI</span>
+            <span class="skill-badge">I2C</span>
+            <span class="skill-badge">Modbus</span>
+            <span class="skill-badge">RS485 / RS232</span>
+            <span class="skill-badge">MQTT</span>
+            <span class="skill-badge">BLE / Wi-Fi</span>
+            <span class="skill-badge">LoRa</span>
+            <span class="skill-badge">Thread / Matter</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="p-4 bg-light rounded h-100">
+            <h5 class="skill-category-title mb-3"><i class="fa fa-bolt text-primary me-2"></i>Hardware Design</h5>
+            <span class="skill-badge">2 & 4 Layer PCBs</span>
+            <span class="skill-badge">High-Speed Circuits</span>
+            <span class="skill-badge">Analog Frontends</span>
+            <span class="skill-badge">Power Electronics</span>
+            <span class="skill-badge">Microgrid Control</span>
+            <span class="skill-badge">EV Chargers</span>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+          <div class="p-4 bg-light rounded h-100">
+            <h5 class="skill-category-title mb-3"><i class="fa fa-tools text-primary me-2"></i>Engineering Tools</h5>
+            <span class="skill-badge">KiCad</span>
+            <span class="skill-badge">Altium Designer</span>
+            <span class="skill-badge">SolidWorks</span>
+            <span class="skill-badge">STM32CubeIDE</span>
+            <span class="skill-badge">Espressif IDE</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Logic Analyzers</span>
           </div>
         </div>
       </div>
     </div>
-    <!-- About End -->
+  </div>
+  <!-- Skills Section End -->
 
-    <!-- Facts Start -->
-    <div
-      class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-4">
-          <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.1s"
-          >
-            <i class="fa fa-paw fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Total Animal</p>
+  <!-- Projects Section Start -->
+  <div class="container-xxl py-5 bg-light rounded">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        <p class="text-primary mb-2"><span class="me-2">#</span>My Projects</p>
+        <h1 class="display-6 mb-0">Industrial & Innovation Works</h1>
+      </div>
+      <div class="row g-4">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="bg-white project-card">
+            <div class="p-4">
+              <i class="fa fa-3x fa-solar-panel text-primary mb-3"></i>
+              <h5 class="mb-3">Renewable Microgrid</h5>
+              <p class="card-text text-muted">
+                An IoT-based portable renewable microgrid. Awarded Top 12 innovations in Solar Decathlon India. Inaugurated by Nitin Gadkari.
+              </p>
+              <a href="portable-renewable-microgrid.html" class="btn btn-sm btn-outline-primary mt-2">View Project Details</a>
+            </div>
           </div>
-          <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.3s"
-          >
-            <i class="fa fa-users fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Daily Vigitors</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="bg-white project-card">
+            <div class="p-4">
+              <i class="fa fa-3x fa-charging-station text-primary mb-3"></i>
+              <h5 class="mb-3">EV Charging Station</h5>
+              <p class="card-text text-muted">
+                Developed a UPI-based EV charging station with localized HMI interface, payment workflow, and load management system.
+              </p>
+              <a href="ev-charging-station.html" class="btn btn-sm btn-outline-primary mt-2">View Project Details</a>
+            </div>
           </div>
-          <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.5s"
-          >
-            <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Total Membership</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="bg-white project-card">
+            <div class="p-4">
+              <i class="fa fa-3x fa-server text-primary mb-3"></i>
+              <h5 class="mb-3">Embedded IoT Gateway</h5>
+              <p class="card-text text-muted">
+                Industrial grade gateway. Supports custom Yocto Linux builds, device driver integration, and Modbus-to-MQTT translation.
+              </p>
+              <a href="iot-gateway.html" class="btn btn-sm btn-outline-primary mt-2">View Project Details</a>
+            </div>
           </div>
-          <div
-            class="col-md-6 col-lg-3 text-center wow fadeIn"
-            data-wow-delay="0.7s"
-          >
-            <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Save Wild Life</p>
+        </div>
+        <!-- Project 4 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="bg-white project-card">
+            <div class="p-4">
+              <i class="fa fa-3x fa-plug text-primary mb-3"></i>
+              <h5 class="mb-3">Smart Energy Meter</h5>
+              <p class="card-text text-muted">
+                Edge-computed smart energy meter, minimizing cloud telemetry overload and optimizing polyphase load analytics locally.
+              </p>
+              <a href="smart-energy-meter.html" class="btn btn-sm btn-outline-primary mt-2">View Project Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="bg-white project-card">
+            <div class="p-4">
+              <i class="fa fa-3x fa-thermometer-half text-primary mb-3"></i>
+              <h5 class="mb-3">Smart HVAC Control</h5>
+              <p class="card-text text-muted">
+                Universal smart control unit interfacing with multi-brand HVAC nodes to optimize power utilization at the edge.
+              </p>
+              <a href="smart-hvac-control.html" class="btn btn-sm btn-outline-primary mt-2">View Project Details</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Facts End -->
+  </div>
+  <!-- Projects Section End -->
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Our Services</p>
-            <h1 class="display-5 mb-0">
-              Special Services For
-              <span class="text-primary">Zoofari</span> Visitors
-            </h1>
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="bg-primary h-100 d-flex align-items-center py-4 px-4 px-sm-5"
-            >
-              <i class="fa fa-3x fa-mobile-alt text-white"></i>
-              <div class="ms-4">
-                <p class="text-white mb-0">Call for more info</p>
-                <h2 class="text-white mb-0">+012 345 6789</h2>
+  <!-- Professional Experience Timeline Start -->
+  <div class="container-xxl py-5">
+    <div class="container">
+      <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        <p class="text-primary mb-2"><span class="me-2">#</span>My Career</p>
+        <h1 class="display-6 mb-0">Professional Timeline</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto wow fadeInUp" data-wow-delay="0.2s">
+          <div class="timeline">
+            <!-- Job 1 -->
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap mb-2">
+                <h4 class="mb-1 text-dark">Embedded Developer</h4>
+                <span class="text-primary font-weight-bold">March 2025 — Present</span>
               </div>
+              <h6 class="text-muted mb-3">Racanaa Energy Solutions Private Limited | Bangalore, KA</h6>
+              <ul class="text-muted pl-3">
+                <li>Led end-to-end development of edge computed polyphase smart energy meters, optimizing edge calculations.</li>
+                <li>Designed a universal HVAC control unit supporting multiple protocols to drive site power optimization.</li>
+                <li>Worked on Embedded Linux gateway solutions, integrating custom kernel drivers, web configuration portals, and messaging scripts.</li>
+                <li>Designed 2-layer and 4-layer PCBs in KiCad and Altium, focusing on EMC, ESD protection, and signal integrity.</li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <div class="row gy-5 gx-4">
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon" />
-            <h5 class="mb-3">Car Parking</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon" />
-            <h5 class="mb-3">Animal Photos</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-4.png" alt="Icon" />
-            <h5 class="mb-3">Guide Services</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.7s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon" />
-            <h5 class="mb-3">Food & Beverages</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-6.png" alt="Icon" />
-            <h5 class="mb-3">Zoo Shopping</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-7.png" alt="Icon" />
-            <h5 class="mb-3">Free Hi Speed Wi-Fi</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-8.png" alt="Icon" />
-            <h5 class="mb-3">Play Ground</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-          <div
-            class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
-            data-wow-delay="0.7s"
-          >
-            <img class="img-fluid mb-3" src="img/icon/icon-9.png" alt="Icon" />
-            <h5 class="mb-3">Rest House</h5>
-            <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Animal Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Our Animals</p>
-            <h1 class="display-5 mb-0">
-              Let`s See Our <span class="text-primary">Zoofari</span> Awsome
-              Animals
-            </h1>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href=""
-              >Explore More Animals</a
-            >
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-1.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-1.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
+            <!-- Job 2 -->
+            <div class="timeline-item">
+              <div class="d-flex justify-content-between flex-wrap mb-2">
+                <h4 class="mb-1 text-dark">Electrical & Electronics Engineer</h4>
+                <span class="text-primary font-weight-bold">June 2023 — February 2025</span>
               </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-1.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-2.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-2.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-2.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-3.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-3.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-3.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
+              <h6 class="text-muted mb-3">Mysuru Green Technologies Private Limited | Mysore, KA</h6>
+              <ul class="text-muted pl-3">
+                <li>Designed and developed the firmware and payment UI flow for a UPI-integrated smart EV charging station.</li>
+                <li>Engineered scalable microgrid controller firmware to manage energy routing and state-of-charge limits.</li>
+                <li>Integrated modbus analytics, supporting real-time industrial power quality tracing.</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Animal End -->
+  </div>
+  <!-- Professional Experience Timeline End -->
 
-    <!-- Visiting Hours Start -->
-    <div
-      class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-            <h1 class="display-6 text-white mb-5">Visiting Hours</h1>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <span>Monday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Tuesday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Wednesday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Thursday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Friday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Saturday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Sunday</span>
-                <span>Closed</span>
-              </li>
-            </ul>
+  <!-- Footer Start -->
+  <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-light mb-4">Contact Info</h5>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Bangalore & Mysuru, Karnataka, India
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i>(+91) 6364825932
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-envelope me-3"></i>akarshsm06@gmail.com
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/akarsh-s-m-00b8471b8/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-outline-light btn-social" href="mailto:akarshsm06@gmail.com"><i class="fa fa-envelope"></i></a>
           </div>
-          <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
-            <h1 class="display-6 text-white mb-5">Contact Info</h1>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>Office</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Zoo</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Ticket</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">ticket@example.com</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Support</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">support@example.com</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-light mb-4">Quick Navigation</h5>
+          <a class="btn btn-link" href="index.html">Home</a>
+          <a class="btn btn-link" href="about.html">About Me</a>
+          <a class="btn btn-link" href="Resume_26_ats_embeded (1).pdf" target="_blank">Download Resume</a>
+          <a class="btn btn-link" href="contact.html">Contact</a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <h5 class="text-light mb-4">Technical Focus</h5>
+          <p>Designing power electronics, embedded firmware with high system reliability, and custom sensor gateways.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a class="border-bottom" href="#">Akarsh S M</a>, All Rights Reserved.
           </div>
         </div>
       </div>
     </div>
-    <!-- Visiting Hours End -->
+  </div>
+  <!-- Footer End -->
 
-    <!-- Membership Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Membership</p>
-            <h1 class="display-5 mb-0">
-              You Can Be A Proud Member Of
-              <span class="text-primary">Zoofari</span>
-            </h1>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href="">Special Pricing</a>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
-              <h1 class="display-1">01</h1>
-              <h4 class="text-white mb-3">Popular</h4>
-              <h3 class="text-primary mb-4">$99.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>2 adult and 2 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
-              <h1 class="display-1">02</h1>
-              <h4 class="text-white mb-3">Standard</h4>
-              <h3 class="text-primary mb-4">$149.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>15% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>4 adult and 4 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
-              <h1 class="display-1">03</h1>
-              <h4 class="text-white mb-3">Premium</h4>
-              <h3 class="text-primary mb-4">$199.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>6 adult and 6 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Membership End -->
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <h1
-          class="display-5 text-center mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          Our Clients Say!
-        </h1>
-        <div
-          class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-1.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
-            </div>
-          </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-2.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
-            </div>
-          </div>
-          <div class="testimonial-item text-center">
-            <img
-              class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-3.jpg"
-              style="width: 100px; height: 100px"
-            />
-            <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial End -->
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
 
-    <!-- Footer Start -->
-    <div
-      class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
-            <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
-            </p>
-            <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@example.com
-            </p>
-            <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-youtube"></i
-              ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Popular Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-            <div class="position-relative mx-auto" style="max-width: 400px">
-              <input
-                class="form-control border-0 w-100 py-3 ps-4 pe-5"
-                type="text"
-                placeholder="Your email"
-              />
-              <button
-                type="button"
-                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-              >
-                SignUp
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <div class="row">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
-              Right Reserved.
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By
-              <a class="border-bottom" href="https://htmlcodex.com"
-                >HTML Codex</a
-              >
-              <br />Distributed By:
-              <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
+  <!-- Custom Animation Scripts -->
+  <script src="js/animations.js"></script>
+  
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-      ><i class="bi bi-arrow-up"></i
-    ></a>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-  </body>
 </html>
