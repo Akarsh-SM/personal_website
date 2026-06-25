@@ -70,8 +70,15 @@
   </nav>
   <!-- Navbar End -->
 
-  <!-- Hero Header Start -->
-  <div class="container-fluid bg-dark p-0 mb-5 text-light">
+  <div class="position-relative overflow-hidden" id="page-wrapper">
+    <!-- Scroll Circuit Trace SVG -->
+    <svg id="scroll-circuit-svg" class="d-none d-xl-block" preserveAspectRatio="none">
+      <path id="scroll-circuit-path-bg" />
+      <path id="scroll-circuit-path-active" />
+    </svg>
+
+    <!-- Hero Header Start -->
+    <div class="container-fluid bg-dark p-0 mb-5 text-light" id="hero-section">
     <div class="row g-0 flex-column-reverse flex-lg-row align-items-center">
       <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="h-100 d-flex flex-column justify-content-center p-3">
@@ -98,7 +105,7 @@
   <!-- Hero Header End -->
 
   <!-- About Section Start -->
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-5" id="about-section">
     <div class="container">
       <div class="row g-5 align-items-center">
         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -137,7 +144,7 @@
   <!-- About Section End -->
 
   <!-- PCB Systems Architecture Start -->
-  <div class="container-xxl py-5 bg-light rounded my-5">
+  <div class="container-xxl py-5 bg-light rounded my-5" id="pcb-section">
     <div class="container">
       <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
         <p class="text-primary mb-2"><span class="me-2">#</span>Interactive PCB Flow</p>
@@ -194,7 +201,7 @@
   <!-- PCB Systems Architecture End -->
 
   <!-- Skills Section Start -->
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-5" id="skills-section">
     <div class="container">
       <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
         <p class="text-primary mb-2"><span class="me-2">#</span>Skills Matrix</p>
@@ -256,7 +263,7 @@
   <!-- Skills Section End -->
 
   <!-- Projects Section Start -->
-  <div class="container-xxl py-5 bg-light rounded">
+  <div class="container-xxl py-5 bg-light rounded" id="projects-section">
     <div class="container">
       <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
         <p class="text-primary mb-2"><span class="me-2">#</span>My Projects</p>
@@ -334,7 +341,7 @@
   <!-- Projects Section End -->
 
   <!-- Professional Experience Timeline Start -->
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-5" id="experience-section">
     <div class="container">
       <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
         <p class="text-primary mb-2"><span class="me-2">#</span>My Career</p>
@@ -376,6 +383,7 @@
     </div>
   </div>
   <!-- Professional Experience Timeline End -->
+  </div> <!-- /#page-wrapper -->
 
   <!-- Footer Start -->
   <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
